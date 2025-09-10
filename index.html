@@ -7,14 +7,15 @@
   <title>Feastify</title>
   <link rel="stylesheet" href="/styles/home-page.css">
   <link rel="stylesheet" href="/styles/menu.css">
-  <link rel="stylesheet" href="/styles/about-us.css">
+  <link rel="stylesheet" href="/styles/about-footer.css">
+  <link rel="stylesheet" href="/styles/cart.css">
   <style>
-  
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
   </style>
 </head>
 
 <body>
+
   <header>
     <nav class="navbar">
       <a href="#" class="logo">
@@ -23,11 +24,13 @@
       </a>
       <ul>
         <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">MENU</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="#about-us">ABOUT</a></li>
+        <li><a href="#menu-section">MENU</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
-      <a href="#" class="Cart">CART</a>
+      <a href="#" class="Cart">
+        CART
+      </a>
     </nav>
     <div class="divider"></div>
   </header>
@@ -62,7 +65,9 @@
           autem reiciendis ipsam vel quaerat blanditiis eos aspernatur? Assumenda suscipit vitae, quisquam ipsam fugit
           nemo labore eveniet eaque! Excepturi.</p>
       </div>
+      
     </div>
+    <div id="menu"></div>
 
     <section class="menu">
       <div class="menu-header">
@@ -71,11 +76,9 @@
           autem nostrum assumenda voluptas tempora eveniet.</p>
       </div>
 
-      <div class="menu-grid">
+      <div id="menu-section" class="menu-grid">
         <div class="menu-card">
-          <img class="menu-card-img"
-            src="/menu-images/pepperoni-pizza1.jpg"
-            alt="Pepperoni Pizza">
+          <img class="menu-card-img" src="/menu-images/pepperoni-pizza1.jpg" alt="Pepperoni Pizza">
           <div class="menu-info">
             <div class="menu-rating">⭐⭐⭐⭐⭐</div>
             <h3>Pepperoni Pizza</h3>
@@ -88,12 +91,10 @@
         </div>
 
         <div class="menu-card">
-          <img class="menu-card-img"
-            src="/menu-images/chicken-pizza.jpg"
-            alt="Chicken Pizza">
+          <img class="menu-card-img" src="/menu-images/chicken-pizza.jpg" alt="Chicken Pizza">
           <div class="menu-info">
             <div class="menu-rating">⭐⭐⭐⭐</div>
-            <h3>Cheese And Spicy Chicken Pizza</h3>
+            <h3>Spicy Chicken</h3>
             <p>Chicken breast, jalapeno, cheese, spicy sauce,onions</p>
             <div class="menu-footer">
               <span class="price">$4.99</span>
@@ -103,9 +104,7 @@
         </div>
 
         <div class="menu-card">
-          <img class="menu-card-img"
-            src="/menu-images/margherita.jpeg"
-            alt="margherita">
+          <img class="menu-card-img" src="/menu-images/margherita.jpeg" alt="margherita">
           <div class="menu-info">
             <div class="menu-rating">⭐⭐⭐⭐⭐</div>
             <h3>Margherita</h3>
@@ -118,9 +117,7 @@
         </div>
 
         <div class="menu-card">
-          <img class="menu-card-img"
-            src="/menu-images/farmhouse.jpeg"
-            alt="Farmhouse">
+          <img class="menu-card-img" src="/menu-images/farmhouse.jpeg" alt="Farmhouse">
           <div class="menu-info">
             <div class="menu-rating">⭐⭐⭐⭐</div>
             <h3>Farmhouse</h3>
@@ -133,38 +130,123 @@
         </div>
 
         <div class="menu-card">
-          <img class="menu-card-img"
-            src="/menu-images/farmhouse.jpeg"
-            alt="Farmhouse">
+          <img class="menu-card-img" src="/menu-images/mushroom-pizza.jpeg" alt="Mushroom pizza">
           <div class="menu-info">
-            <div class="menu-rating">⭐⭐⭐⭐</div>
-            <h3>Farmhouse</h3>
-            <p>Olives, basil, onion, tomatoes, lettuce</p>
+            <div class="menu-rating">⭐⭐⭐</div>
+            <h3>Mushroom Overloaded</h3>
+            <p>Mushrooms ,Olives, basil,Oregano, lettuce</p>
             <div class="menu-footer">
-              <span class="price">$4.69</span>
+              <span class="price">$3.99</span>
               <button class="add-cart">Add to Cart</button>
             </div>
           </div>
         </div>
 
-      </div>
+        <div class="menu-card">
+          <img class="menu-card-img" src="/menu-images/peppy-paneer-pizza.jpg" alt="peppy paneer pizza">
+          <div class="menu-info">
+            <div class="menu-rating">⭐⭐⭐⭐⭐</div>
+            <h3>Peppy Paneer</h3>
+            <p>Paneer, basil , oregano, american cheese, tomato</p>
+            <div class="menu-footer">
+              <span class="price">$4.29</span>
+              <button class="add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
 
+        <div class="menu-card">
+          <img class="menu-card-img" src="/menu-images/peppy-paneer-pizza.jpg" alt="peppy paneer pizza">
+          <div class="menu-info">
+            <div class="menu-rating">⭐⭐⭐⭐⭐</div>
+            <h3>Peppy Paneer</h3>
+            <p>Paneer, basil , oregano, american cheese, tomato</p>
+            <div class="menu-footer">
+              <span class="price">$4.29</span>
+              <button class="add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
 
+        <div class="menu-card">
+          <img class="menu-card-img" src="/menu-images/peppy-paneer-pizza.jpg" alt="peppy paneer pizza">
+          <div class="menu-info">
+            <div class="menu-rating">⭐⭐⭐⭐⭐</div>
+            <h3>Peppy Paneer</h3>
+            <p>Paneer, basil , oregano, american cheese, tomato</p>
+            <div class="menu-footer">
+              <span class="price">$4.29</span>
+              <button class="add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
 
+        <div class="menu-card">
+          <img class="menu-card-img" src="/menu-images/peppy-paneer-pizza.jpg" alt="peppy paneer pizza">
+          <div class="menu-info">
+            <div class="menu-rating">⭐⭐⭐⭐⭐</div>
+            <h3>Peppy Paneer</h3>
+            <p>Paneer, basil , oregano, american cheese, tomato</p>
+            <div class="menu-footer">
+              <span class="price">$4.29</span>
+              <button class="add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
 
+        <div class="menu-card">
+          <img class="menu-card-img" src="/menu-images/peppy-paneer-pizza.jpg" alt="peppy paneer pizza">
+          <div class="menu-info">
+            <div class="menu-rating">⭐⭐⭐⭐⭐</div>
+            <h3>Peppy Paneer</h3>
+            <p>Paneer, basil , oregano, american cheese, tomato</p>
+            <div class="menu-footer">
+              <span class="price">$4.29</span>
+              <button class="add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div id="about-us"></div>
     </section>
 
-
     <div class="about-us">
-      <p>about us</p>
+
+      <h2>ABOUT US</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sint nam quisquam nobis rem? Eius, vero? Earum quo ullam voluptates quos. Dignissimos, quos! Doloremque dicta molestiae voluptatem, sit unde neque. Eum corporis libero perferendis. Illum neque praesentium reprehenderit, sint magnam eveniet! Molestiae commodi deleniti soluta beatae inventore, iure laudantium maiores illo sit? Nostrum nobis ipsa debitis et officia amet illum explicabo ad voluptate consequatur sunt earum dignissimos natus, cum laudantium fugit omnis sed maxime dolorum magnam eos quidem quasi blanditiis quibusdam? Itaque quia, odio a neque ipsum alias inventore ad obcaecati, dolores beatae similique recusandae repudiandae, temporibus maxime. Molestiae saepe enim, aspernatur quam exercitationem sunt aut consectetur reprehenderit reiciendis natus accusantium mollitia facilis quaerat nemo, amet quasi vero unde. Molestias placeat accusamus est.</p>
     </div>
 
-
-
-
-
   </main>
+
+  <footer id ="contact" class="site-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Feastify</h3>
+      <p>Delicious food delivered to your doorstep. Fresh, fast, and always tasty.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Email: aryan@feastify.com</p>
+      <p>Phone: +91 99999 99999</p>
+      <p>Location: Jaipur, Rajasthan, India</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Feastify. All rights reserved.</p>
+  </div>
+</footer>
   <script src="/scripts/main.js"></script>
+  <script src="/scripts/cart.js"></script>
 </body>
 
 </html>
