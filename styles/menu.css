@@ -1,0 +1,116 @@
+.menu-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.menu-header h2 {
+    margin-top: 10;
+    font-size: 45px;
+    width: 60%;
+    color: #d32f2f;
+    margin: 50px;
+}
+
+.menu-header p {
+    margin-top: 0px;
+    width: 40%;
+    color: rgb(150, 145, 145);
+    font-size: 16px;
+}
+
+
+.menu-grid {
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+  margin-top: 16px;
+} */
+    gap: 20px;
+    /* Space between cards */
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* Enable horizontal scroll */
+    scroll-snap-type: x mandatory;
+    /* Snap cards into place */
+    padding: 20px 0;
+    -webkit-overflow-scrolling: touch;
+    flex-wrap: nowrap;
+    padding:20px 12px;
+    scroll-behavior: smooth;
+
+
+}
+
+
+
+
+.menu-card {
+    flex: 0 0 auto;
+    background: #fff;
+    width: 280px;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start;
+    /* transition: transform 0.18s ease, box-shadow 0.18s ease; */
+    transition: transform 0.3s ;
+}
+
+.menu-card:hover {
+    /* transform: translateY(-6px);
+    
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12); */
+    transform:scale(1.05);
+}
+
+.menu-grid::-webkit-scrollbar{
+    height: 8px;
+}
+.menu-grid::-webkit-scrollbar-thumb {
+  background: #d32f2f;          /* Red scrollbar */
+  border-radius: 10px;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu-info {
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-rating {
+    color: #ff9800;
+    /* gold stars */
+    font-size: 14px;
+}
+
+.menu-info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #222;
+}
+
+.menu-info p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.menu-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
