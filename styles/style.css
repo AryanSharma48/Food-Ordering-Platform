@@ -1,0 +1,257 @@
+body {
+  padding-top: 60px;
+  margin: 0;
+  font-family: "Poppins";
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(249, 249, 249);
+  padding: 20px 20px;
+  z-index: 1000;
+  box-sizing: border-box;
+  margin: 0;
+  position: fixed;
+  box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.1);
+  /* border:2 px solid grey; */
+}
+
+.logo-image {
+  width: 35px;
+  height: auto;
+}
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 23px;
+}
+
+.navbar ul li a,
+.navbar .Cart {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover,
+.navbar .Cart:hover {
+  color: #ff9800;
+}
+.divider {
+  width: 100%;
+  height: 35px;
+  background: linear-gradient(to right, #8b0000, #d32f2f, #8b0000);
+}
+
+.top-food {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.top-food h2 {
+  margin-top: 10;
+  font-size: 45px;
+  width: 60%;
+}
+
+.top-food p {
+  margin-top: 0px;
+  width: 40%;
+  color: rgb(150, 145, 145);
+}
+.explore-menu {
+  padding: 20px 25px;
+  font-weight: bold;
+  background: #e13333;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.explore-menu:hover {
+  background-color: rgb(153, 14, 14);
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.food-img {
+  margin-top: 20px;
+  min-width: 70%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.quality-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background: linear-gradient(to bottom, #f5ba39, #e9a804);
+  padding: 80px 40px;
+  margin-top: -440px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.quality-icon {
+  width: 60px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.quality-box {
+  text-align: center;
+  flex: 1;
+  margin: 0 20px;
+}
+
+.quality-box h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.quality-box p {
+  font-size: 14px;
+  color: black;
+  line-height: 1.5;
+  /* width: 300px; */
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d32f2f;
+  border-radius: 10px;
+  border: 2px solid #fff8e1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b71c1c;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.menu-header h2 {
+  margin-top: 10;
+  font-size: 45px;
+  width: 60%;
+  color: #d32f2f;
+  margin: 50px;
+}
+
+
+.menu-header p {
+  margin-top: 0px;
+  width: 40%;
+  color: rgb(150, 145, 145);
+  font-size: 16px;
+}
+
+/* 
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+  margin-top: 16px;
+} */
+.menu-card{
+  background: red;
+  border-radius: 10px;
+  width: 100%;
+  height: 100vh;
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+
+.menu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.menu-card img {
+  width: 20%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu-card .menu-info {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu-rating {
+  color: #ff9800;
+  font-size: 14px;
+}
+
+.menu-info h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+}
+
+.menu-info p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.menu-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
