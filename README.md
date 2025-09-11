@@ -1,6 +1,6 @@
-🍽️ Feastify – Food Ordering Website
+🍽️ La Crosta – Food Ordering Website
 
-Feastify is a simple and responsive food ordering website built with HTML, CSS, and JavaScript.
+La Crosta is a simple and responsive food ordering website built with HTML, CSS, and JavaScript.
 It allows users to browse a menu, add food items to their cart, and simulate placing an order — providing a smooth and interactive experience.
 
 🔹 Features
@@ -35,12 +35,12 @@ It also serves as a base for expanding into a full-stack food ordering platform 
 
 Clone the repository
 
-git clone https://github.com/your-username/feastify.git
+git clone https://github.com/your-username/la crosta.git
 
 
 Navigate into the project folder
 
-cd feastify
+cd la crosta
 
 
 Open the project
