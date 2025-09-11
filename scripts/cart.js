@@ -24,7 +24,7 @@ function updateCartCount() {
     cartCount.textContent = totalItems;
 }
 
-// Open cart when "Add to Cart" clicked
+// Open cart when Add to Cart clicked
 document.querySelectorAll(".add-cart").forEach(button => {
     button.addEventListener("click", () => {
         const menuCard = button.closest(".menu-card");
@@ -87,7 +87,7 @@ function decreaseQuantity(index) {
     cartItems[index].quantity -= 1;
     total -= cartItems[index].price;
   } else {
-    // If only 1 left → remove item
+    // If only 1 left remove item
     total -= cartItems[index].price;
     cartItems.splice(index, 1);
   }

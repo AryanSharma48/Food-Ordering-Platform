@@ -8,8 +8,8 @@
 .about-us h2 {
   font-size: 45px;
   color: #d32f2f;
-  margin: 50px 0;   /* same spacing as menu */
-  width: 60%;       /* match the menu style */
+  margin: 50px 0;  
+  width: 60%;       
 }
 
 
@@ -25,7 +25,7 @@
 
 .site-footer {
   background: #242222;
-  color: #fff;
+  color:white;
   padding: 40px 20px 20px;
   margin-top: 50px;
 }
