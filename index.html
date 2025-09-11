@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feastify</title>
+  <title>La Crosta</title>
   <link rel="stylesheet" href="/styles/home-page.css">
   <link rel="stylesheet" href="/styles/menu.css">
   <link rel="stylesheet" href="/styles/about-footer.css">
@@ -19,7 +19,7 @@
   <header>
     <nav class="navbar">
       <a href="#" class="logo">
-        Feastify
+        La Crosta
         <img class="logo-image" src="images/logo-pizza.png" alt="logo-pizza">
       </a>
       <ul>
@@ -225,10 +225,23 @@
 
   </main>
 
+
+  <div id="cart" class="cart">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="close-cart">&times;</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-footer">
+      <p>Total: $<span id="cart-total">0.00</span></p>
+      <button class="checkout-css" id="checkout-btn">Checkout</button>
+    </div>
+  </div>
+
   <footer id="contact" class="site-footer">
     <div class="footer-container">
       <div class="footer-about">
-        <h3>Feastify</h3>
+        <h3>La Crosta</h3>
         <p>Delicious food delivered to your doorstep. Fresh, fast, and always tasty.</p>
       </div>
 
@@ -243,17 +256,17 @@
 
       <div class="footer-contact">
         <h4>Contact</h4>
-        <p>Email: aryan@feastify.com</p>
+        <p>Email: aryan@lacrosta.com</p>
         <p>Phone: +91 99999 99999</p>
         <p>Location: Jaipur, Rajasthan, India</p>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; 2025 Feastify. All rights reserved.</p>
+      <p>&copy; 2025 La Crosta. All rights reserved.</p>
     </div>
   </footer>
-  
+
   <script src="/scripts/main.js"></script>
   <script src="/scripts/cart.js"></script>
 </body>
