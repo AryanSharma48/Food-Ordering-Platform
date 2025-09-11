@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="/styles/menu.css">
   <link rel="stylesheet" href="/styles/about-footer.css">
   <link rel="stylesheet" href="/styles/cart.css">
+  <link rel="stylesheet" href="/styles/checkout.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
   </style>
@@ -28,9 +29,11 @@
         <li><a href="#menu-section">MENU</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
-      <a href="#" class="Cart">
-        CART
-      </a>
+      <div class="cart-icon" id="cart-icon">
+       
+        🛒
+        <span class="cart-count" id="cart-count">0</span>
+      </div>
     </nav>
     <div class="divider"></div>
   </header>
@@ -238,6 +241,17 @@
     </div>
   </div>
 
+  <!-- Checkout Modal -->
+<div id="checkout-modal" class="checkout-modal">
+  <div class="checkout-content">
+    <span id="close-checkout" class="close-checkout">&times;</span>
+    <h2>Checkout</h2>
+    <p>Your total is: $<span id="checkout-total">0.00</span></p>
+    <button id="confirm-checkout">Confirm Order</button>
+  </div>
+</div>
+
+
   <footer id="contact" class="site-footer">
     <div class="footer-container">
       <div class="footer-about">
@@ -269,6 +283,7 @@
 
   <script src="/scripts/main.js"></script>
   <script src="/scripts/cart.js"></script>
+  <script src="/scripts/checkout.js"></script>
 </body>
 
 </html>

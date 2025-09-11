@@ -2,9 +2,27 @@ const cart = document.getElementById("cart");
 const closeCart = document.getElementById("close-cart");
 const cartItemsContainer = document.getElementById("cart-items");
 const cartTotal = document.getElementById("cart-total");
+const cartIcon= document.getElementById("cart-icon");
+const cartCount = document.getElementById("cart-count");
 
 let cartItems = [];
 let total = 0;
+
+let totalItems = 0;
+
+// Toggle cart when clicking navbar icon
+cartIcon.addEventListener("click", () => {
+    cart.classList.toggle("open");
+});
+
+// Update the cart item count badge
+function updateCartCount() {
+    totalItems = 0;
+    cartItems.forEach(item => {
+        totalItems += item.quantity;
+    });
+    cartCount.textContent = totalItems;
+}
 
 // Open cart when "Add to Cart" clicked
 document.querySelectorAll(".add-cart").forEach(button => {
@@ -31,6 +49,7 @@ function addToCart(name, price) {
 
     total += price;
     updateCart();
+    updateCartCount();
 }
 
 // Update cart UI
@@ -60,6 +79,7 @@ function increaseQuantity(index) {
   cartItems[index].quantity += 1;
   total += cartItems[index].price;
   updateCart();
+  updateCartCount();
 }
 
 function decreaseQuantity(index) {
@@ -72,6 +92,7 @@ function decreaseQuantity(index) {
     cartItems.splice(index, 1);
   }
   updateCart();
+  updateCartCount();
 }
 
 
@@ -82,6 +103,7 @@ function removeFromCart(index) {
     total -= cartItems[index].price;
     cartItems.splice(index, 1);
     updateCart();
+    updateCartCount();
 }
 
 // Open and close cart
