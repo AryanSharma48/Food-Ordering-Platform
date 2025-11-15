@@ -35,7 +35,7 @@ It also serves as a base for expanding into a full-stack food ordering platform 
 
 Clone the repository
 
-git clone https://github.com/AryanSharma48/la crosta.git
+git clone https://github.com/AryanSharma48/Food-Ordering-Platform.git
 
 
 Navigate into the project folder
