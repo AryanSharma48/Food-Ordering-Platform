@@ -17,7 +17,7 @@ It allows users to browse a menu, add food items to their cart, and simulate pla
 
 Frontend: HTML, CSS, JavaScript
 
-(Optional Enhancements): Can be extended with libraries/frameworks or backend integration
+Can be extended with libraries/frameworks or backend integration
 
 🔹 Project Purpose
 
